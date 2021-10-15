@@ -3,6 +3,7 @@ import { Text, View, StyleSheet, Button, Image, TextInput } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import Constants from 'expo-constants';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Profile from './components/profile.js'
 
 function HomeScreen({ navigation }){
   return(
@@ -23,6 +24,10 @@ function HomeScreen({ navigation }){
         <View style={{flex:0.5}}/>
         <View style={{flex:1,height:100}}>
           <Button title="Discography" color="black" onPress={()=> navigation.navigate('Death Grips Discography')}></Button>
+        </View>
+        <View style={{flex:0.5}}/>
+        <View style={{flex:1,height:100}}>
+          <Button title="Profile" color="blue" onPress={()=> navigation.navigate('Profile')}></Button>
         </View>
       </View>
     </View>
@@ -94,6 +99,7 @@ export default function App() {
         <Stack.Screen name="Death Grips is Online" component={HomeScreen}/>
         <Stack.Screen name="About Death Grips App" component={AboutScreen}/>
         <Stack.Screen name="Death Grips Discography" component={DiscoScreen}/>
+        <Stack.Screen name="Profile" component={Profile}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
