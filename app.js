@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, Button, Image, TextInput } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import Constants from 'expo-constants';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Profile from './components/profile.js'
+import Profile from './profile.js'
 
 function HomeScreen({ navigation }){
   return(
