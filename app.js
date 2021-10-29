@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, Button, Image, TextInput } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import Constants from 'expo-constants';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Profile from './profile.js'
+import Profile from './components/profile.js'
 
 function HomeScreen({ navigation }){
   return(
@@ -21,11 +21,9 @@ function HomeScreen({ navigation }){
         <View style={{flex:1}}>
           <Button title="About Death Grips App" color="maroon" onPress={()=> navigation.navigate('About Death Grips App')}></Button>
         </View>
-        <View style={{flex:0.5}}/>
         <View style={{flex:1,height:100}}>
           <Button title="Discography" color="black" onPress={()=> navigation.navigate('Death Grips Discography')}></Button>
         </View>
-        <View style={{flex:0.5}}/>
         <View style={{flex:1,height:100}}>
           <Button title="Profile" color="blue" onPress={()=> navigation.navigate('Profile')}></Button>
         </View>
@@ -83,7 +81,7 @@ function AboutScreen(){
       </Text>
       <View>
         <Text style={styles.textBox}>
-          Death Grips is one of the greatest experimental Hip-Hop bands of all time. Originating in Sacremento, CA in 2010, Death Grips consists of rapper Ride (Stefan Burnett), Zach Hill (drums, production), and Andy Morin (keyboards, production). They have released 6 studio albums. My favorite is 2016's Bottomless Pit.
+          Death Grips is one of the greatest experimental Hip-Hop bands of all time. Originating in Sacremento, CA in 2010, Death Grips consists of rapper Ride (Stefan Burnett), Zach Hill (drums, production), and Andy Morin (keyboards, production). They have released 7 studio albums. My favorite is either 2016's Bottomless Pit or 2012's The Money Store.
         </Text>
       </View>
     </View>
