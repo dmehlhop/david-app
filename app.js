@@ -3,8 +3,8 @@ import {Text, View, StyleSheet, Button, Image, TextInput, FlatList} from 'react-
 import { NavigationContainer } from '@react-navigation/native';
 import Constants from 'expo-constants';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Profile from './components/profile.js';
-import MoshTempsContext from './components/moshTempsContext'
+import Profile from './profile.js';
+import MoshTempsContext from './moshTempsContext'
 
 const tourData = [
   { date: 'February 30th, Dublin' },
